@@ -330,56 +330,6 @@ VSCode with 5 extensions: 2GB and climbing
 
 ---
 
-## 🤔 FAQ (Frequently Asked Questions)
-
-### "Why not use LazyVim/LunarVim/AstroVim?"
-Because you're here to **code**, not to configure a distribution that someone else made. This config is **simple enough to understand** and **complete enough to be productive**.
-
-### "Where are all the plugins?"
-This isn't a plugin collection, it's a **working editor**. Every plugin here serves a purpose. If you want 47 colorschemes and a plugin that shows you cat pictures, go make your own config.
-
-### "Can I add more plugins?"
-Of course! Just don't turn this into a 500-plugin monstrosity. Ask yourself: "Does this plugin make me code faster?" If the answer is no, you don't need it.
-
-### "The keybindings are weird"
-Yeah, `Ih` and `Iu` for LSP actions are... creative. Feel free to change them to something that makes sense. Or keep them and confuse your pair programming partner.
-
-### "Why 2 spaces instead of 4?"
-Because 4 spaces is for Java programmers and we're not monsters here. 2 spaces, final answer.
-
----
-
-## 🤝 Contributing
-
-### Ways to Help
-- 🐛 **Fix bugs** - Something broken? Fix it and send a PR
-- ✨ **Add features** - Missing something important? Add it (but keep it simple)
-- 📚 **Improve docs** - Make this README even more helpful
-- 🧹 **Clean up code** - See something gross? Clean it up
-
-### What We DON'T Want
-- Theme switching plugins
-- Startup screen with ASCII art
-- Plugins that show the weather
-- 47 different ways to do the same thing
-- Anything that makes startup slower
-
-### Contribution Process
-```bash
-# 1. Fork the repo
-# 2. Make your changes
-# 3. Test that it still works
-# 4. Submit PR with clear description
-# 5. Don't break existing functionality
-```
-
----
-
-## 📄 License
-
-MIT License - Do whatever you want with this code. Build upon it, break it, fix it, make it better. Just don't blame me when you accidentally delete your entire project because you fat-fingered a keybinding.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -404,7 +354,6 @@ Now stop reading documentation and go write some code.
 
 <div align="center">
 
-**Built with ❤️ and way too much caffeine**
 
 *"The best editor is the one that gets out of your way" - Some wise programmer, probably*
 
