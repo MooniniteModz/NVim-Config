@@ -16,13 +16,13 @@
 ⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```
 
-**Alright chat, listen up...**
+**No React Andy's here...**
 
-This isn't your typical 847-plugin Neovim config that takes longer to boot than Windows Vista. This is a **LEAN, MEAN, CODING MACHINE** that actually helps you code instead of spending 3 hours configuring your status line to show the phases of the moon.
+This isn't your typical 847-plugin Neovim config that takes longer to boot than Windows Vista. This is a **LEAN, MEAN, CODING VIM CONFIG ** that actually helps you code instead of spending 3 hours configuring your status line to show the phases of the moon.
 
 ---
 
-## 🔥 Why This Config Doesn't Suck
+## Why This Config Doesn't Suck
 
 ### It's Actually Fast
 - ⚡ **Lazy loading** - Plugins load when you need them, not when your cat walks across the keyboard
