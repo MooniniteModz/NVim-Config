@@ -344,11 +344,8 @@ VSCode with 5 extensions: 2GB and climbing
 
 Look, this config isn't perfect. But it's **simple**, **fast**, and **gets out of your way** so you can actually write code instead of configuring your editor for 6 hours.
 
-If you want something more complex, go use an IDE. If you want something that works and makes you productive, this is it.
+If you want something more complex, go use an IDE. If you want something that works and makes you productive, NeoVim is end-game.
 
-Now stop reading documentation and go write some code.
-
-**Happy coding, chat! 🚀**
 
 ---
 
