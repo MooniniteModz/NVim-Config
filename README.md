@@ -16,342 +16,158 @@
 ⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```
 
-**No React Andy's here...**
+s) |
+🚀 Why Use This Config?
 
-This isn't your typical 847-plugin Neovim config that takes longer to boot than Windows Vista. This is a **LEAN, MEAN, CODING VIM CONFIG ** that actually helps you code instead of spending 3 hours configuring your status line to show the phases of the moon.
+✅ Fast
 
----
+Lazy-loading keeps startup under control
 
-## Why This Config Doesn't Suck
+Minimal plugins with maximum utility
 
-### It's Actually Fast
-- ⚡ **Lazy loading** - Plugins load when you need them, not when your cat walks across the keyboard
-- 🚀 **Zero bloat** - No dancing cursors, no startup screens with ASCII art of your waifu
-- 💨 **Quick startup** - Because waiting for your editor is for VS Code users
+No gimmicks, no bloated dashboards
 
-### Sensible Defaults That Work
-```lua
--- 2 spaces for indentation because we're not barbarians
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+✅ Focused
 
--- Space as leader because it's 2024, not 1987
-vim.g.mapleader = " "
-```
+Clean UI with just what you need: file tree, status line, LSP, formatter
 
-### Actually Useful Plugins (Not 47 Colorschemes)
-- 🎨 **Catppuccin** - One good colorscheme that doesn't burn your retinas
-- 🔍 **Telescope** - Find files faster than you can complain about JavaScript
-- 🌳 **Neo-tree** - File explorer that doesn't make you want to `rm -rf` your config
-- 📊 **Lualine** - Status line that shows useful info, not your horoscope
-- 🧠 **LSP** - Code completion that actually completes your code
-- 🌲 **Treesitter** - Syntax highlighting from this decade
+Smart defaults like space as leader and 2-space indentation
 
----
+Comes with the tools you actually use (not 12 colorschemes you never will)
 
-## 🛠️ Installation (Don't Mess This Up)
+🔧 Setup
 
-### Prerequisites (The Bare Minimum)
+Prerequisites
 
-```bash
-# You need Neovim 0.8+ 
-# If you're still on 0.7, what are you even doing?
+# Neovim 0.10+
+# WSL, macOS, Linux all work
 
-# macOS (the objectively superior development platform)
-brew install neovim
-
-# Ubuntu/Debian (perfectly acceptable choice)
-sudo apt install neovim
-
-# Arch (btw I use arch)
-sudo pacman -S neovim
-
-# Windows
-# Please just use WSL. I'm begging you.
-```
-
-### Required Dependencies (Actually Required)
-
-```bash
-# Ripgrep - because regular grep is for masochists
-# Node.js - unfortunately we live in a JavaScript world
-# Git - if you don't have git, we need to have a serious talk
-
-# macOS
-brew install ripgrep node git
-
-# Ubuntu/Debian
+# Required tools
 sudo apt install ripgrep nodejs npm git
 
-# Arch
-sudo pacman -S ripgrep nodejs npm git
-```
+Install
 
-### Installation (The Easy Part)
+mv ~/.config/nvim ~/.config/nvim.backup  # optional
 
-```bash
-# Back up your existing config (if you have one worth backing up)
-mv ~/.config/nvim ~/.config/nvim.backup
+git clone https://github.com/yourname/nvim-config ~/.config/nvim
 
-# Clone this masterpiece
-git clone https://github.com/MooniniteModz/NVim-Config.git ~/.config/nvim
-
-# Launch Neovim
 nvim
-```
 
-**First launch:** It's gonna install plugins automatically via Lazy.nvim. Don't panic. This is normal. Grab some coffee (good coffee, not that Folgers garbage).
+First launch installs plugins via Lazy.nvim. Give it a moment.
 
----
+📦 Included Plugins
 
-## 📦 What's Actually In Here
+Plugin
 
-### Plugin Breakdown (The Good Stuff)
+Purpose
 
-```lua
--- Plugin manifest (locked versions for stability)
-{
-  "catppuccin":           -- Colorscheme that doesn't suck
-  "lazy.nvim":            -- Plugin manager that's actually lazy
-  "lualine.nvim":         -- Status line with useful info
-  "mason.nvim":           -- LSP installer that works
-  "mason-lspconfig.nvim": -- Glue between Mason and LSP
-  "neo-tree.nvim":        -- File explorer that makes sense
-  "none-ls.nvim":         -- Formatters and linters
-  "nvim-lspconfig":       -- LSP configuration that works
-  "nvim-treesitter":      -- Syntax highlighting from 2024
-  "telescope.nvim":       -- Fuzzy finder supremacy
+lazy.nvim
+
+Plugin manager
+
+catppuccin
+
+One clean theme
+
+neo-tree
+
+File explorer
+
+lualine
+
+Status line
+
+telescope
+
+Fuzzy finder
+
+nvim-treesitter
+
+Syntax-aware highlighting
+
+nvim-lspconfig
+
+LSP support
+
+mason.nvim
+
+LSP installer
+
+none-ls.nvim
+
+Formatter / linter bridge
+
+🧠 LSP Support
+
+ensure_installed = {
+  "lua_ls",     -- Lua
+  "clangd",     -- C/C++
+  "sqls"        -- SQL
 }
-```
 
-### LSP Support (The Important Part)
-```lua
--- Languages that actually work out of the box:
-ensure_installed = { 
-  "lua_ls",   -- Lua (obviously)
-  "clangd",   -- C/C++ (for the real programmers)
-  "sqls"      -- SQL (for when you need to touch databases)
-}
-```
+Out of the box: hover docs, completion, diagnostics, go-to-definition.
 
-### File Structure (Organized Like a Human)
-```
+🗂️ File Structure
+
 ~/.config/nvim/
-├── init.lua              # Entry point (11 lines, no bloat)
-├── lazy-lock.json        # Plugin versions (for reproducible builds)
+├── init.lua
 ├── lua/
-│   ├── vim-options.lua   # The 5 settings that actually matter
-│   └── plugins/          # One file per plugin (revolutionary concept)
-│       ├── catppuccin.lua    # Colorscheme
-│       ├── lsp-config.lua    # LSP setup
-│       ├── lualine.lua       # Status line
-│       ├── neo-tree.lua      # File explorer
-│       ├── none-ls.lua       # Formatters/linters
-│       ├── telescope.lua     # Fuzzy finder
-│       └── treesitter.lua    # Syntax highlighting
-```
+│   ├── plugins/
+│   │   └── (one file per plugin)
+│   └── options.lua
 
----
+⌨️ Key Bindings
 
-## ⌨️ Keybindings (The Ones You'll Actually Use)
+Key
 
-### Leader Key
-```lua
--- Space as leader because your thumb is already there
-vim.g.mapleader = " "
-```
+Action
 
-### File Operations (The Essential Stuff)
-| Key | Action | Description |
-|-----|--------|-------------|
-| `<leader>ff` | Find files | Telescope file finder (faster than clicking) |
-| `<leader>fg` | Live grep | Search across all files (grep on steroids) |
-| `<leader>n` | Toggle Neo-tree | File explorer (left side, where it belongs) |
-| `<leader>gf` | Format file | Make your code not look like garbage |
+<leader>ff
 
-### LSP Keybindings (Actually Useful)
-| Key | Action | Description |
-|-----|--------|-------------|
-| `Ih` | Hover documentation | See what that function actually does |
-| `Iu` | Go to definition | Jump to where stuff is defined |
-| `<leader>ca` | Code actions | Fix your code automatically |
+Find files (Telescope)
 
-**Note:** Yeah, `Ih` and `Iu` are weird keybindings. We'll fix that later. Or you can fix it and submit a PR like a chad.
+<leader>fg
 
----
+Search text (grep)
 
-## 🎨 Visual Setup (It Actually Looks Good)
+<leader>n
 
-### Catppuccin Theme
-```lua
--- One colorscheme to rule them all
--- No theme switching every 5 minutes
--- No rainbow vomit
--- Just clean, readable colors
-```
+Toggle Neo-tree
 
-### Lualine Status Bar
-```lua
--- Shows you:
--- - Current mode (because you forgot again)
--- - File name (because files have names)
--- - Git branch (because version control matters)
--- - LSP status (so you know when things break)
--- 
--- Doesn't show you:
--- - The weather
--- - Your horoscope  
--- - How many commits you've made today
--- - Whether Mercury is in retrograde
-```
+<leader>gf
 
----
+Format file
 
-## 🧠 LSP Configuration (The Brain)
+K
 
-### Supported Languages
-```lua
--- Languages with first-class support:
-✅ Lua        -- Obviously (it's Neovim)
-✅ C/C++      -- For the systems programmers
-✅ SQL        -- Database queries
+Hover docs
 
--- Adding more languages:
--- 1. Add to ensure_installed in lsp-config.lua
--- 2. Add setup call: lspconfig.LANGUAGE.setup {}
--- 3. That's it. No 47-step configuration ritual.
-```
+gd
 
-### What You Get
-- **Auto-completion** that actually completes
-- **Diagnostics** that point to real problems
-- **Go-to definition** that goes to the actual definition
-- **Hover documentation** that's actually helpful
-- **Code actions** that fix your terrible code
+Go to definition
 
----
+<leader>ca
 
-## 🔍 Telescope (File Finding Supremacy)
+Code actions
 
-### What It Does
-```lua
--- Find files by name (fuzzy matching)
--- Search file contents (live grep)
--- Browse through results like a human
--- No more clicking through folder trees like a caveman
-```
+🎨 UI
 
-### Usage
-```lua
--- <leader>ff - Find files
--- Type part of filename, get results instantly
--- Way faster than your mouse, I don't care what you think
+Catppuccin Mocha theme by default
 
--- <leader>fg - Live grep  
--- Search for text across your entire project
--- Regex support because we're not animals
-```
+Lualine for mode, file info, and LSP status
 
----
-
-## 🌳 File Management (Neo-tree)
-
-### Features
-- **Tree view** on the left (where it belongs)
-- **Git integration** (see your dirty files)
-- **Icons** that actually mean something
-- **No lag** when opening large directories
-
-### Usage
-```lua
--- <leader>n - Toggle file tree
--- Navigate with hjkl like a vim user
--- Press enter to open files
--- It's not rocket science
-```
-
----
-
-## 🛠️ Development (For Contributors)
-
-### Adding New Plugins
-```lua
--- 1. Create new file in lua/plugins/
--- 2. Return plugin spec:
-return {
-  "author/plugin-name",
-  config = function()
-    -- Setup goes here
-  end
-}
-
--- 3. Restart nvim
--- 4. Plugin installs automatically
--- 5. No need to run :PlugInstall like it's 2015
-```
-
-### Plugin Philosophy
-- **One plugin, one file** - No 500-line plugin configurations
-- **Sensible defaults** - It should work without 47 configuration options
-- **Clear purpose** - Every plugin should solve a specific problem
-- **No redundancy** - We don't need 3 file explorers
-
-### Code Style
-```lua
--- Use 2 spaces for indentation
--- Keep functions under 20 lines
--- Comment why, not what
--- If it needs a paragraph of comments, it's too complex
-```
-
----
-
-## 🚀 Performance Notes
-
-### Startup Time
-```
-Average startup time: ~50ms
-Cold start (first time): ~200ms
-With 50 files open: Still fast
-
-Compare that to VSCode: "Loading..." for 3 seconds
-```
-
-### Memory Usage
-```
-Idle: ~50MB
-With LSP active: ~150MB
-With large project: ~300MB
-
-VSCode with 5 extensions: 2GB and climbing
-```
-
----
+Nerd Font support out of the box
 
 
-## 🙏 Acknowledgments
+👏 Credits
 
-- **ThePrimeagen** - For teaching us that Neovim is superior to everything else
-- **Folke** - For Lazy.nvim (the plugin manager that actually works)
-- **The Neovim Team** - For making an editor that doesn't suck
-- **Everyone who contributes** - You make this better than one person ever could
+ThePrimeagen
 
----
+Folke for Lazy.nvim
 
-## 🎯 Final Words
+Catppuccin for theme inspiration
 
-Look, this config isn't perfect. But it's **simple**, **fast**, and **gets out of your way** so you can actually write code instead of configuring your editor for 6 hours.
+And the entire Neovim community
 
-If you want something more complex, go use an IDE. If you want something that works and makes you productive, NeoVim is end-game.
+“The best editor is the one that gets out of your way.” – Probably some wise dev
 
-
----
-
-<div align="center">
-
-
-*"The best editor is the one that gets out of your way" - Some wise programmer, probably*
-
-</div>
