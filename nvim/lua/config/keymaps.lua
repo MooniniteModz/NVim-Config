@@ -74,6 +74,5 @@ keymap.set("n", "<Up>", "<Nop>")
 keymap.set("n", "<Down>", "<Nop>")
 keymap.set("n", "<Left>", "<Nop>")
 keymap.set("n", "<Right>", "<Nop>")
-```
 
 ---
