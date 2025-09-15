@@ -104,11 +104,10 @@ gd	Go to definition	Jump to where stuff is defined
 <leader>ca	Code actions	Fix your code automatically
 
 🎨 Visual Setup (It Actually Looks Good)
-Catppuccin – One colorscheme to rule them all.
+Catppuccin – For those with finer tastes.
 
 Lualine – Current mode, file name, git branch, LSP status.
-
-No rainbow vomit – Just clean, readable colors.
+-No rainbow vomit – Just clean, readable colors.
 
 🧠 LSP Configuration
 Supported Languages:
@@ -119,48 +118,33 @@ Supported Languages:
 Add more? Just update ensure_installed and add a setup call. No 47-step rituals.
 
 What You Get:
-
-Auto-completion
-
-Diagnostics
-
-Go-to definition
-
-Hover documentation
-
-Code actions
+-Auto-completion
+-Diagnostics
+-Go-to definition
+-Hover documentation
+-Code actions
 
 🔍 Telescope (File Finding Supremacy)
-Find files by name (fuzzy matching)
-
-Search file contents (live grep)
-
-Browse through results like a human
-
-No more clicking through folder trees like a caveman
+-Find files by name (fuzzy matching)
+-Search file contents (live grep)
+-Browse through results like a human
+-No more clicking through folder trees like a caveman
 
 🌳 File Management (Neo-tree)
-Tree view on the left (where it belongs)
-
-Git integration
-
-Icons that actually mean something
-
-No lag when opening large directories
+-Tree view on the left (where it belongs)
+-Git integration
+-Icons that actually mean something
+-No lag when opening large directories
 
 Plugin Philosophy
-One plugin, one file – No 500-line configs
-
-Sensible defaults – It should work without 47 options
-
-Clear purpose – Every plugin solves a specific problem
+-One plugin, one file – No 500-line configs
+-Sensible defaults – It should work without 47 options
+-Clear purpose – Every plugin solves a specific problem
 
 🚀 Performance Notes
-Startup time: ~50ms
-
-Cold start: ~200ms
-
-With 50 files open: Still fast
+-Startup time: ~50ms
+-Cold start: ~200ms
+-With 50 files open: Still fast
 
 VSCode with 5 extensions: 2GB and climbing
 This config: ~150MB max with LSP active
