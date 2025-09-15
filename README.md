@@ -27,18 +27,13 @@ set shiftwidth=2
 
 -- Space as leader because it's 2024, not 1987
 vim.g.mapleader = " "
-Actually Useful Plugins (Not 47 Colorschemes)
-🎨 Catppuccin – One good colorscheme that doesn't burn your retinas.
-
-🔍 Telescope – Find files faster than you can complain about JavaScript.
-
-🌳 Neo-tree – File explorer that doesn't make you want to rm -rf your config.
-
-📊 Lualine – Status line that shows useful info, not your horoscope.
-
-🧠 LSP – Code completion that actually completes your code.
-
-🌲 Treesitter – Syntax highlighting from this decade.
+Useful Plugins (Not 47 Colorschemes)
+🎨 Catppuccin Theme
+🔍 Telescope - Fuzzy Finder
+🌳 Neo-tree – File explorer 
+📊 Lualine – Status line that shows useful info.
+🧠 LSP – Code completion.
+🌲 Treesitter – Syntax highlighting .
 
 🛠️ Installation
 bash
@@ -169,19 +164,3 @@ With 50 files open: Still fast
 
 VSCode with 5 extensions: 2GB and climbing
 This config: ~150MB max with LSP active
-
-🙏 Acknowledgments
-ThePrimeagen – For teaching us that Neovim is superior to everything else
-
-TypeCraft – For his extensive "How To Config" NeoVim videos
-
-Folke – For Lazy.nvim
-
-The Neovim Team
-
-Everyone who contributes – you make this better than one person ever could
-
-🎯 Final Words
-This config isn't perfect. But it's simple, fast, and gets out of your way so you can actually write code instead of configuring your editor for 6 hours.
-
-"The best editor is the one that gets out of your way." – Some wise programmer, probably
