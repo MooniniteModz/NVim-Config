@@ -1,4 +1,4 @@
-# 🚀 Simple & Fast NeoVim Config (v4.2.0)
+# Simple & Fast NeoVim Config (v4.2.0)
 
 This setup is built to be **extremely fast** and easy to use. It uses **lazy loading** to make sure your editor starts instantly and only runs what you need, when you need it.
 
